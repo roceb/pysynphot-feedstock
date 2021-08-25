@@ -40,9 +40,10 @@ about:
   license_family: BSD
   license_file: LICENSE.md
   summary: 'Synthetic photometry package from Astrolib.'
-  doc_url: https://github.com/spacetelescope/pysynphot/tree/master/doc
+  doc_url: https://pysynphot.readthedocs.io
   dev_url: https://github.com/spacetelescope/pysynphot
 
 extra:
   recipe-maintainers:
     - mfisherlevine
+    - pllim
