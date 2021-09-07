@@ -1,6 +1,6 @@
 {% set name = "pysynphot" %}
-{% set version = "1.0.1" %}
-{% set sha256 = "1c301bc9780dd03062d8d0f73e771de80766a61dccff23f7524cb91adf468f5c" %}
+{% set version = "2.0.0" %}
+{% set sha256 = "45c29f69248ec8a641c38625d11409dd2411ea1d6faffd8c3b44da354c4d22e7" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
 
 build:
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
   skip: true  # [py<37 or win]
 
 requirements:
@@ -36,10 +36,10 @@ test:
 
 about:
   home: https://github.com/spacetelescope/pysynphot
-  license:  BSD-3-Clause
+  license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE.md
-  summary: 'Synthetic photometry package from Astrolib.'
+  summary: Synthetic photometry package from Astrolib.
   doc_url: https://pysynphot.readthedocs.io
   dev_url: https://github.com/spacetelescope/pysynphot
 
