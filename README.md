@@ -11,7 +11,7 @@ Summary: Synthetic photometry package from Astrolib.
 
 Development: https://github.com/spacetelescope/pysynphot
 
-Documentation: https://github.com/spacetelescope/pysynphot/tree/master/doc
+Documentation: https://pysynphot.readthedocs.io
 
 Current build status
 ====================
@@ -174,4 +174,5 @@ Feedstock Maintainers
 =====================
 
 * [@mfisherlevine](https://github.com/mfisherlevine/)
+* [@pllim](https://github.com/pllim/)
 
