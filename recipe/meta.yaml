@@ -21,18 +21,21 @@ requirements:
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
     - numpy                                  # [build_platform != target_platform]
     - {{ stdlib('c') }}
+    - {{ compiler('c') }}
   host:
     - python
     - pip
+    - wheel
     - numpy
-    - setuptools
+    - setuptools >=30.3.0
+    - setuptools-scm
   run:
     - python
     - astropy-base
-    - numpy
     - beautifulsoup4
     - six
     - setuptools
+    - {{ pin_compatible('numpy') }}
 
 test:
   imports:
